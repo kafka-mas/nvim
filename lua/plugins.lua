@@ -9,8 +9,9 @@ vim.pack.add({
 	{ src = "https://github.com/windwp/nvim-autopairs" },
 	{ src = "https://github.com/akinsho/toggleterm.nvim" },
 	{ src = "https://github.com/nvim-tree/nvim-tree.lua" },
-	{src="https://github.com/nvim-mini/mini.comment"},
+	{ src = "https://github.com/nvim-mini/mini.comment" },
 	-- { src = "https://github.com/numtostr/comment.nvim" },
+	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
 })
 
 
@@ -22,6 +23,9 @@ require("mason").setup({})
 
 -- LUALINE --
 require("lualine").setup()
+
+-- GITSIGNS --
+require('gitsigns').setup()
 
 -- NVIM-TREE --
 require("nvim-tree").setup({

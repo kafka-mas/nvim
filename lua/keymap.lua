@@ -17,3 +17,7 @@ vim.keymap.set("n", "<Leader>fo", ":lua vim.lsp.buf.format()<CR>", opts)
 -- local toggleterm = require("toggleterm")
 -- vim.keymap.set("n", "<leader>j", toggleterm.toggle)
 -- vim.keymap.set("t", "<CTRL>j", toggleterm.toggle)
+
+-- LSP --
+ -- vim.lsp.buf.rename() 
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)

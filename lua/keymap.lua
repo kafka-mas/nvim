@@ -14,6 +14,9 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 
+vim.keymap.set("n", "zt", "zt3<C-y>")
+vim.keymap.set("n", "zb", "zb3<C-e>")
+
 -- FZF --
 local fzf = require("fzf-lua")
 vim.keymap.set("n", "<leader><leader>", fzf.files)
